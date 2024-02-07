@@ -2,7 +2,6 @@
   margin: 0px auto;
   max-width: 1024px;
   font-family: "Roboto", sans-serif;
-  background-color: #d0d0d0;
 }
 
 .header {
@@ -39,4 +38,16 @@
     "header header"
     " main main"
     "footer footer";
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: darkgoldenrod;
+  }
 }
