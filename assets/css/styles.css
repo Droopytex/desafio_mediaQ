@@ -87,7 +87,8 @@ img {
 }
 
 .paginacion {
-  margin: 10px 0;
+  margin: 5px 0;
+  display: flex;
 }
 
 .paginacion ul {
@@ -98,12 +99,13 @@ img {
 
 .paginacion ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
+  justify-content: center;
 }
 
 .paginacion ul li a {
   display: block;
-  padding: 10px 20px;
+  padding: 8px 8px;
   color: #fff;
   background: #b4b9ba;
   text-decoration: none;
