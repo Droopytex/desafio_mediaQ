@@ -6,6 +6,7 @@
 
 .navegador {
   display: flex;
+  height: 100vh;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
@@ -13,7 +14,9 @@
   background-color: rgb(0, 105, 143);
   padding: 20px;
 }
-
+h2{
+  color: #fff;
+}
 .logo_encabezado {
   display: flex;
   align-items: center;
@@ -57,6 +60,7 @@
   flex-direction: column;
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 
 .footer {
@@ -67,7 +71,14 @@
   grid-area: footer;
   width: 100%;
   background-color: rgb(186, 186, 186);
-  padding: 15px;
+  padding: 5px;
+}
+
+.f_p{
+  display: flex;
+  font-weight: lighter;
+  font-size: 12px;
+
 }
 
 footer img{
@@ -86,7 +97,7 @@ footer img{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 
@@ -98,11 +109,15 @@ footer img{
   flex-direction: column;
   border: solid 1px #e1e1e1;
   background-color: #fff;
-  gap: 10px;
+  font-family:"Roboto";
+  font-size: 12px;
+  font-weight: lighter;
+
 }
 
 .card img {
   width: 200px;
+  padding: 2px;
 }
 
 .boton {
@@ -118,16 +133,6 @@ footer img{
   font-weight: bold;
 }
 
-.txt_01 {
-  display: flex;
-  font-weight: lighter;
-  margin: 0%;
-  font-family: "roboto";
-  font-size: 15px;
-  padding: 0px;
-  width: auto;
-  color: #727272;
-}
 
 .paginacion {
   margin: 5px 0;
@@ -197,7 +202,7 @@ footer img{
   /*---- ajustes de componentes ----*/
   .navegador {
     flex-direction:column;
-    justify-content: strat
+    justify-content:start;
   }
 
   .min_menu{
@@ -205,17 +210,24 @@ footer img{
   }
 
   .main{
-    padding-top:15px;}
-
+    grid-template-columns: 1f 1f 1f 1f ;
+    padding-top:20px;
+    height: 100vh;
+  }
     .container_card{
       overflow: auto;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content:center;
-      padding-top:35px
+      padding-top:20px
     }
+ .card span{
+  font-weight: 600;
+ }
+
 .navegador ul{
   display:block;
+  color: #fff;
   font-size:18px;
   font-weight:600;
   padding-top:15px;
@@ -226,6 +238,18 @@ footer img{
 }
 .navegador h2{
   font-size:26px;
+}
+.paginacion{
+  display: flex;
+  padding: 8px;
+}
+
+.footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 240px;
 }
 
 
@@ -242,7 +266,7 @@ footer img{
       "header main"
       "footer main";
   }
-}
+
 
 /*---- ajustes de componentes ----*/
 /*
@@ -255,23 +279,4 @@ footer img{
   }
 }
 
-@media (min-width: 992px) {
-  .main {
-    height: 60vh;
-    width: 50%;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #727272;
-  }
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .secciones {
-    display: flex;
-    list-style: none;
-  }
-}
